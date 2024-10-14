@@ -26,7 +26,7 @@ vector<int> generateBlumNumbers(int N) {
     vector<int> blumNumbers;
     
     for (size_t i = 0; i < primes.size(); i++) {
-        for (size_t j = i + 1; j < primes.size(); j++) {
+        for (size_t j = i; j < primes.size(); j++) {
             int blumNumber = primes[i] * primes[j];
             if (blumNumber < N) {
                 // Kiểm tra xem số Blum này đã có trong vector chưa
